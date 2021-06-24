@@ -1,0 +1,74 @@
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #000; 
+  background-image: url('https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+svg {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+  stroke: #fff; 
+  width: 900px; 
+
+  animation-name: animate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animate {
+  0% {
+    filter: drop-shadow(0px 0px 1px #fff)
+    drop-shadow(0px 0px 3px #fff)
+    drop-shadow(0px 0px 10px #ff80b3)
+    drop-shadow(0px 0px 30px #ff4d94)
+    drop-shadow(0px 0px 50px #ff0066);
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 3px #fff)
+    drop-shadow(0px 0px 6px #fff)
+    drop-shadow(0px 0px 15px #ff80b3)
+    drop-shadow(0px 0px 40px #ff4d94)
+    drop-shadow(0px 0px 60px #ff0066); 
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 1px #fff)
+    drop-shadow(0px 0px 3px #fff)
+    drop-shadow(0px 0px 10px #ff80b3)
+    drop-shadow(0px 0px 30px #ff4d94)
+    drop-shadow(0px 0px 50px #ff0066); 
+  }
+}
+
+
+a {
+  position: absolute; 
+  display: inline-block; 
+  padding-bottom: 4px;
+  top: 0.5em; 
+  right: 0.5em;
+  color: #fff; 
+  text-decoration: none;
+  border-bottom: 1px solid #fff; 
+  font-family: monospace; 
+  letter-spacing: 1px;
+  transition: color 0.2s ease-out, border-color 0.2s ease-out; 
+}
+
+a:hover {
+  color: #ff80b3; 
+  border-bottom: 1px solid #ff80b3;
+}
