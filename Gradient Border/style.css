@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  height: 100vh; 
+  font-family: 'Lobster', cursive;
+
+  background-image: url('https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.border {
+  width: 450px; 
+  height: 450px; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(#FF1493, 
+                                    #FF4A73, 
+                                    #FF7B59, 
+                                    #FFA94B, 
+                                    #FFD251, 
+                                    #F9F871); 
+  
+  clip-path: polygon(0% 0%, 0% 100%, 2% 100%, 2% 2%, 98% 2%, 98% 98%, 2% 98%, 0 100%, 100% 100%, 100% 0%);
+}
+
+p {
+  color: #1d1d1d;
+  font-size: 6rem;
+  text-align: center;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+span {
+  display: block;
+}
+
+span:first-child {
+  text-shadow: 3px 0px #FF7B59; 
+}
+
+span:last-child {
+  text-shadow: 3px 0px #FFD251;
+}
+
+a {
+  position: absolute; 
+  right: 0.5em; 
+  top: 0; 
+  color: #1d1d1d;
+  text-decoration: none;
+  padding: 3px; 
+  border-bottom: 2px solid #FF1493;
+  transition: color 0.3s ease-out; 
+}
+
+a:hover {
+  color: #FF1493; 
+}
+
+/* if h1 nested inside container it also gets clipped 
+*/
