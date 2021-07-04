@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000; 
+}
+
+.container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.ball, 
+.shadow {
+  display: inline-block;
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 50%; 
+  background-color:deepskyblue; 
+  margin: 0 2.5rem; 
+  position: relative;
+}
+
+.ball {
+  box-shadow: 0 0 5px deepskyblue, 0 0 25px deepskyblue;  
+  animation: load 0.8s ease-in-out infinite; 
+}
+
+.shadow {
+  bottom: 1em; 
+  transform: perspective(1em) rotateX(50deg) scale(1.2, 0.5);
+  animation: blur 0.8s ease-in-out infinite;
+}
+
+.ball:nth-of-type(2), 
+.shadow:nth-of-type(2) {
+  animation-delay: 0.2s; 
+}
+
+.ball:nth-of-type(3), 
+.shadow:nth-of-type(3) {
+  animation-delay: 0.4s; 
+}
+
+@keyframes load {
+  0% {
+    bottom: 0; 
+    transform: scale(1.1, 0.9);
+  }
+
+  50% {
+    bottom: 4rem; 
+    transform: scale(0.9, 1.1);
+  }
+
+  100% {
+    bottom: 0; 
+    transform: scale(1.1, 0.9);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.2em);
+  }
+
+  50% {
+    filter: blur(1.5em);
+  }
+
+  100% {
+    filter: blur(1.2em);
+  }
+}
