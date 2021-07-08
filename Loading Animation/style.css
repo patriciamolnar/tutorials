@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@600&display=swap');
+
+:root {
+  --main: #1ac6ff;
+}
 
 * {
   margin: 0;
@@ -22,19 +26,19 @@ body {
   width: 2rem; 
   height: 2rem; 
   border-radius: 50%; 
-  background-color:deepskyblue; 
+  background-color: var(--main); 
   margin: 0 2.5rem; 
   position: relative;
 }
 
 .ball {
-  box-shadow: 0 0 5px deepskyblue, 0 0 25px deepskyblue;  
+  box-shadow: 0 0 5px var(--main), 0 0 25px var(--main);  
   animation: load 0.8s ease-in-out infinite; 
 }
 
 .shadow {
-  bottom: 1em; 
-  transform: perspective(1em) rotateX(50deg) scale(1.2, 0.5);
+  bottom: 1.4em; 
+  transform: perspective(1rem) rotateX(50deg) scale(1.2, 0.5);
   animation: blur 0.8s ease-in-out infinite;
 }
 
@@ -51,7 +55,7 @@ body {
 @keyframes load {
   0% {
     bottom: 0; 
-    transform: scale(1.1, 0.9);
+    transform: scale(1.2, 0.9);
   }
 
   50% {
@@ -61,7 +65,7 @@ body {
 
   100% {
     bottom: 0; 
-    transform: scale(1.1, 0.9);
+    transform: scale(1.2, 0.9);
   }
 }
 
@@ -77,4 +81,15 @@ body {
   100% {
     filter: blur(1.2em);
   }
+}
+
+
+a {
+  position: absolute; 
+  top: 0.5rem; 
+  right: 0.5rem; 
+  color: var(--main); 
+  font-family: 'Encode Sans SC';
+  text-decoration: none;
+  border-bottom: 1px solid var(--main);
 }
