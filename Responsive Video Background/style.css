@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+.hero {
+  height: 100vh; 
+  position: relative; 
+}
+
+.hero-video {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: inherit; 
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.hero-copy {
+  font-family: 'Luckiest Guy', sans-serif; 
+  color: #fff;
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
+  font-size: calc(1rem + 3vw); 
+  letter-spacing: 3px; 
+  text-align: center; 
+}
+
+a {
+  position: absolute; 
+  top: 0.5em; 
+  right: 0.5em; 
+  font-family: 'Luckiest Guy', sans-serif; 
+  color: #fff;
+  text-decoration: none; 
+  border-bottom: 2px solid #fff; 
+}
+
+a:hover {
+  color: yellow;
+  border-color: yellow; 
+}
