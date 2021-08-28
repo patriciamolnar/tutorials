@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --grey: #E5E7EB;
+  --magenta: #ff0066; 
+}
+
+#container {
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+#heart {
+  width: 250px;  
+  stroke: #ff0066; 
+  fill: #E5E7EB;
+  stroke-linecap: round; 
+  stroke-linejoin: round; 
+  stroke-dasharray: 54;
+  stroke-dashoffset: 54;
+  transform-origin: center;
+}
+
+#heart.like {
+  animation: 2s ease-in forwards like, 0.8s linear 2s 2 forwards beat;
+}
+
+#heart.unlike {
+  animation: 2s ease-out forwards unlike;
+}
+
+@keyframes like {
+  0% {
+    stroke-dashoffset: 54;
+    fill: var(--grey); 
+  }
+  
+  60% {
+    stroke-dashoffset: 0;
+    fill: var(--grey);
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+    fill: var(--magenta);
+  }
+}
+
+@keyframes unlike {
+  0% {
+    stroke-dashoffset: 0;
+    fill: var(--magenta); 
+  }
+  
+  30% {
+    stroke-dashoffset: 0;
+    fill: var(--grey);
+  }
+  
+  100% {
+    stroke-dashoffset: 54;
+    fill: var(--grey);
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  
+  100% {
+    transform: scale(1, 1);
+  }
+}

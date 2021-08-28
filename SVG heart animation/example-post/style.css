@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --grey: #E5E7EB;
+  --magenta: #ff0066; 
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+}
+
+h1 {
+  margin: 0.5em 0; 
+  text-align: center;
+}
+
+.image {
+  width: 400px; 
+  height: 400px; 
+  background: var(--grey);
+  border-radius: 5px; 
+  display: flex; 
+  align-items: center; 
+  text-align: center;
+  padding: 2rem;  
+  font-size: 2rem;
+}
+
+.image span {
+  color: var(--magenta); 
+}
+
+.post-info {
+  display: flex; 
+  align-items: center;
+}
+
+#container {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+#heart {
+  width: 50px;  
+  stroke: #ff0066; 
+  fill: #E5E7EB;
+  stroke-linecap: round; 
+  stroke-linejoin: round; 
+  stroke-dasharray: 54;
+  stroke-dashoffset: 54;
+  transform-origin: center;
+}
+
+#heart.like {
+  animation: 2s ease-in forwards like, 0.8s linear 2s 2 forwards beat;
+}
+
+#heart.unlike {
+  animation: 2s ease-out forwards unlike;
+}
+
+@keyframes like {
+  0% {
+    stroke-dashoffset: 54;
+    fill: var(--grey); 
+  }
+  
+  60% {
+    stroke-dashoffset: 0;
+    fill: var(--grey);
+  }
+  
+  100% {
+    stroke-dashoffset: 0;
+    fill: var(--magenta);
+  }
+}
+
+@keyframes unlike {
+  0% {
+    stroke-dashoffset: 0;
+    fill: var(--magenta); 
+  }
+  
+  30% {
+    stroke-dashoffset: 0;
+    fill: var(--grey);
+  }
+  
+  100% {
+    stroke-dashoffset: 54;
+    fill: var(--grey);
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(0.9, 0.9);
+  }
+  
+  100% {
+    transform: scale(1, 1);
+  }
+}
