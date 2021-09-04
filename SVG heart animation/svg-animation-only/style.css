@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 :root {
-  --grey: #E5E7EB;
+  --grey: #ccc;
   --magenta: #ff0066; 
 }
 
@@ -13,18 +11,17 @@
 }
 
 #heart {
-  width: 250px;  
-  stroke: #ff0066; 
-  fill: #E5E7EB;
-  stroke-linecap: round; 
-  stroke-linejoin: round; 
+  width: 150px;  
+  stroke: var(--magenta); 
+  fill: var(--grey);
   stroke-dasharray: 54;
   stroke-dashoffset: 54;
   transform-origin: center;
 }
 
 #heart.like {
-  animation: 2s ease-in forwards like, 0.8s linear 2s 2 forwards beat;
+  animation: 2s ease-in forwards like, 
+    0.8s linear 2s 2 forwards beat;
 }
 
 #heart.unlike {
