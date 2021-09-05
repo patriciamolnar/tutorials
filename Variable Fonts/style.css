@@ -35,7 +35,7 @@ h1 {
   animation-iteration-count: infinite; 
 }
 
-//animation for Trispace font
+/* animation for Trispace font */
 @keyframes dots {
   0% {
     font-variation-settings: "wght" 149, "wdth" 100; 
@@ -48,7 +48,7 @@ h1 {
   }
 }
 
-//animation for fraunces font
+/* animation for Fraunces font */
 @keyframes fraunces {
   0% {
     font-variation-settings: "wght" 100, "SOFT" 0;
