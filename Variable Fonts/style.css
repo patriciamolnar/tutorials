@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Trispace;
+  src: url('fonts/Trispace[wdth,wght].ttf');
+}
+
+@font-face {
+  font-family: Fraunces;
+  src: url('fonts/Fraunces.ttf');
+}
+
+
+body {
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center;
+  text-align: center; 
+  overflow: hidden;
+}
+
+h1 {
+  font-size: calc(1rem + 6vw);
+  font-family: Fraunces; 
+  font-weight: 100; 
+  font-variation-settings: "wght" 100;
+  /* font-variation-settings: "wdth" 75; */
+  /* animation-name: dots;  */
+  animation-name: fraunces; 
+  animation-duration: 5s; 
+  animation-direction: alternate; 
+  animation-iteration-count: infinite; 
+}
+
+//animation for Trispace font
+@keyframes dots {
+  0% {
+    font-variation-settings: "wght" 149, "wdth" 100; 
+    color: #111827;
+  }
+
+  100% {
+    font-variation-settings: "wght" 999, "wdth" 115;
+    color: black; 
+  }
+}
+
+//animation for fraunces font
+@keyframes fraunces {
+  0% {
+    font-variation-settings: "wght" 100, "SOFT" 0;
+  }
+
+  100% {
+    font-variation-settings: "wght" 900, "SOFT" 100;
+  }
+}
