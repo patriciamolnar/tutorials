@@ -3,9 +3,10 @@
 @tailwind utilities; 
 
 @layer base {
-  label, input, textarea {
-    @apply block; 
+  input, textarea {
+    @apply block w-full; 
   }
+
 }
 
 @layer components {
