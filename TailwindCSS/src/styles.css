@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+@layer base {
+  label, input, textarea {
+    @apply block; 
+  }
+}
+
+@layer components {
+  .btn-fill {
+    @apply bg-lime-400 py-3 px-5 text-black text-lg font-abril rounded-lg shadow-lg hover:bg-purple-400 transition;
+  }
+
+  .btn-stroke {
+    @apply border-2 border-lime-400 rounded-lg font-abril text-lime-400 py-3 px-5 shadow-lg hover:border-purple-400 hover:text-purple-400 transition;
+  }
+
+  .link {
+    @apply border-b-2 border-lime-400 hover:border-purple-400 transition; 
+  }
+
+  .card {
+    @apply bg-gray-800 shadow-lg rounded-lg bg-cover h-36 flex justify-center items-center
+  }
+
+  .card-text {
+    @apply text-xl font-abril -mt-2; 
+  }
+}
