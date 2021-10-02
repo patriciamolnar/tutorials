@@ -34,9 +34,9 @@ body {
 }
 
 h1 {
-  font-size: calc(3rem + 5vw); 
+  font-size: calc(1rem + 3vw); 
   animation-name: change; 
-  animation-duration: 5s; 
+  animation-duration: 2s; 
   animation-direction: alternate; 
   animation-iteration-count: infinite; 
   color: #fff;
@@ -46,11 +46,6 @@ h1 {
 
 @keyframes change {
 	0% {
-    font-variation-settings: "wght" 100, "SPAC" 100;
-    text-shadow: var(--shadow);
-  }
-
-  30% {
     font-variation-settings: "wght" 100, "SPAC" 100;
     text-shadow: var(--shadow);
   }
