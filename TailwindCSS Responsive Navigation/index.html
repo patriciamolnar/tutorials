@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pmCodingTutorials</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 h-screen overflow-hidden">
+    <header class="px-4 pt-8 md:flex md:justify-between md:items-center relative z-10">
+        <div class="flex items-center">
+            <button id="burger" 
+                class="w-9 h-9 mr-2 flex flex-col items-center justify-between md:hidden">
+                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
+                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
+                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
+            </button>
+            <span class="text-white inline-block text-3xl font-bold">PM</span>
+        </div>
+        <nav id="nav" class="absolute sr-only text-lg ml-1 mt-6 flex flex-col gap-4 md:flex-row md:not-sr-only md:align-center">
+            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">Home</a>
+            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">About</a>
+            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">Contact</a>
+        </nav>
+    </header>
+
+    <main class="text-center">
+        <h1 class="text-7xl text-white mt-48">
+            Site Title<span class="text-8xl text-blue-400">.</span>
+        </h1>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
