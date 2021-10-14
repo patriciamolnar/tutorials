@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const nav = document.getElementById('nav'); 
-    const navLinks = document.querySelectorAll('#nav a')
+    const navLinks = document.querySelectorAll('#nav a'); 
+    const dots = document.querySelectorAll('#burger > span');
+    const first = dots[0]; 
+    const last = dots[2];
 
     const expandNav = () => {
-        const dots = document.querySelectorAll('#burger > span');
-        const first = dots[0];
-        const mid = dots[1]; 
-        const last = dots[2]; 
-
         if(first.classList.contains('transform')) {
             first.classList.remove('transform', 'translate-x-3', 'translate-y-1'); 
             last.classList.remove('transform', '-translate-x-3', '-translate-y-1'); 

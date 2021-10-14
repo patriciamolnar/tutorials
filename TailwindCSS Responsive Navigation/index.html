@@ -8,20 +8,20 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 h-screen overflow-hidden">
-    <header class="px-4 pt-8 md:flex md:justify-between md:items-center relative z-10">
+    <header class="px-4 pt-8 md:flex md:justify-between md:items-center">
         <div class="flex items-center">
             <button id="burger" 
                 class="w-9 h-9 mr-2 flex flex-col items-center justify-between md:hidden">
-                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
-                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
-                <span class="block w-2 h-2 rounded-full pointer-events-none transition-all bg-blue-400"></span>
+                <span class="block w-2 h-2 rounded-full bg-blue-400 transition-all"></span>
+                <span class="block w-2 h-2 rounded-full bg-blue-400 transition-all"></span>
+                <span class="block w-2 h-2 rounded-full  bg-blue-400 transition-all"></span>
             </button>
-            <span class="text-white inline-block text-3xl font-bold">PM</span>
+            <span class="text-white text-3xl font-bold">PM</span>
         </div>
-        <nav id="nav" class="absolute sr-only text-lg ml-1 mt-6 flex flex-col gap-4 md:flex-row md:not-sr-only md:align-center">
-            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">Home</a>
-            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">About</a>
-            <a href="#" class="text-white font-semibold opacity-0 transition-all md:opacity-100 hover:text-blue-400">Contact</a>
+        <nav id="nav" class="absolute text-lg ml-1 mt-6 flex flex-col gap-4 sr-only md:flex-row md:not-sr-only md:align-center">
+            <a href="#" class="text-white hover:text-blue-400 font-semibold transition-all opacity-0 md:opacity-100">Home</a>
+            <a href="#" class="text-white hover:text-blue-400 font-semibold transition-all opacity-0 md:opacity-100">About</a>
+            <a href="#" class="text-white hover:text-blue-400 font-semibold transition-all opacity-0 md:opacity-100">Contact</a>
         </nav>
     </header>
 
