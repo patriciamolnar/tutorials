@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --clr: #FDA4AF;
+    --dark: #171717; 
+    --light: #f8f8ff; 
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    padding: 6em 3em; 
+    font-family: var(--font);
+    background-color: var(--dark);
+    color: var(--light); 
+}
+
+h1 {
+    color: #ccc; 
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+button {
+    background-color: var(--clr);
+    color: #000;
+    border-radius: 0; 
+    border: 2px solid var(--clr); 
+    padding: 0.5em 1.5em;  
+    font-family: inherit;
+    transition: background-color 0.2s linear, color 0.2s linear; 
+}
+
+button:focus, 
+button:hover {
+    color: var(--clr);  
+    background-color: transparent;
+    border-color: var(--clr);
+}
+
+input {
+    padding: 1em; 
+    width: 100%; 
+    border-radius: 0; 
+    background-color: #242424;
+    border: none; 
+    color: var(--light); 
+}
+
+input:focus,
+button:focus {
+    outline: none; 
+    box-shadow: none;
+}
+
+::placeholder {
+    color: #ccc; 
+    font-family: var(--font); 
+}
+
+.input-container {
+    padding: 2px; 
+    margin: 1.5rem 0; 
+}
+
+.input-container.outline {
+    animation-name: animate-in;
+    animation-duration: 1.2s; 
+    background-image: linear-gradient(to right, var(--clr), var(--clr)),
+                      linear-gradient(to bottom, var(--clr), var(--clr)),
+                      linear-gradient(to right, var(--clr), var(--clr)),
+                      linear-gradient(to bottom, var(--clr), var(--clr));
+    background-size:  100% 2px, 2px 100%, 100% 2px, 2px 100%;
+    background-position:  0 0, 100% 0%, 100% 100%, 0 100%; 
+    background-repeat: no-repeat;
+}
+
+
+@keyframes animate-in {
+    0% {
+        background-size:  0 2px, 0 0, 0 0, 0 0; 
+    }
+
+    25% {
+        background-size:  100% 2px, 0 0, 0 0, 0 0; 
+    }
+
+    50% {
+        background-size:  100% 2px, 2px 100%, 0 0, 0 0; 
+    }
+
+    75% {
+        background-size:  100% 2px, 2px 100%, 100% 2px, 0 0; 
+    }
+
+    100% {
+        background-size:  100% 2px, 2px 100%, 100% 2px, 2px 100%;  
+    }
+}
+
