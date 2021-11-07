@@ -8,6 +8,9 @@ For bi-monthly coding tutorials focusing on frontend web development visit pmCod
 * TailwindCSS tutorials
 
 ## List of tutorials
+* [JavaScript game tutorial for beginners: How to code a number memorising game with JavaScript](https://youtu.be/hZ05_Tju4ps)
+* [CSS animation on input focus: add an animated outline with CSS and JavaScript](https://youtu.be/XKn_8AwfF3w)
+* [Tailwind CSS tutorial: How to code a responsive navigation](https://youtu.be/bbyH3MSrCkE)
 * [CSS text animation with variable fonts](https://youtu.be/JbjA4oE4Ma4)
 * [TailwindCSS tutorial](https://youtu.be/xDiLpuUHjmg)
 * [SVG animation: animate an SVG icon](https://youtu.be/eSpHvESNcZQ)
