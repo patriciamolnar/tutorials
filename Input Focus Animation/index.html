@@ -1,142 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+<div class="container">
+  <h1>Input focus animation</h1>
+  <form>
+    <div class="input-container">
+      <label for="email" class="sr-only">
+        Your email:
+      </label>
+      <input type="email" id="email" placeholder="Your email...">
+    </div>
 
-:root {
-    --clr: #FDA4AF;
-    --dark: #171717; 
-    --light: #f8f8ff; 
-    --font: 'Poppins', sans-serif;
-}
+    <div class="input-container">
+      <label for="password" class="sr-only">
+        Your password:
+      </label>
+      <input type="password" id="password" placeholder="Your password...">
+    </div>
 
-* {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-}
+    <div class="text-right">
+      <button>Submit</button>
+    </div>
+  </form>
+  
+  <a href="https://youtu.be/XKn_8AwfF3w" id="tutorial">
+    watch tutorial
+  </a>
+</div>
 
-body {
-    padding: 6em 3em; 
-    font-family: var(--font);
-    background-color: var(--dark);
-    color: var(--light); 
-}
-
-.container {
-  width: 400px; 
-  margin: auto; 
-}
-
-h1 {
-    color: #ccc; 
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
-
-.text-right {
-    text-align: right;
-}
-
-input {
-  padding: 1em; 
-  width: 100%; 
-  border-radius: 0; 
-  border: none; 
-  background-color: #242424;
-  color: var(--light);
-}
-
-input:focus,
-button:focus {
-  outline: none; 
-  box-shadow: none; 
-}
-
-button {
-  background-color: var(--clr);
-  color: #000;
-  border-radius: 0; 
-  border: 2px solid var(--clr); 
-  padding: 0.5em 1.5em;  
-  font-family: inherit;
-  transition: background-color 0.2s linear, color 0.2s linear; 
-}
-
-button:focus, 
-button:hover {
-  color: var(--clr);  
-  background-color: transparent;
-  border-color: var(--clr);
-}
-
-::placeholder {
-  color: #ccc;
-  font-family: var(--font);
-}
-
-.input-container {
-  padding: 2px; 
-  margin: 1.5rem 0;  
-}
-
-.input-container.outline {
-  animation-name: animate-in; 
-  animation-duration: 1s;
-  background-image: linear-gradient(to right, var(--clr), var(--clr)), 
-  linear-gradient(to bottom, var(--clr), var(--clr)), 
-  linear-gradient(to right, var(--clr), var(--clr)),
-  linear-gradient(to bottom, var(--clr), var(--clr)); 
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%; 
-/*   background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%;  */
-  background-repeat: no-repeat;   
-}
-
-@keyframes animate-in {
-  0% {
-    background-size: 0 2px, 0 0, 0 0, 0 0; 
-  }
-
-  25% {
-    background-size: 100% 2px, 0 0, 0 0, 0 0; 
-  }
-
-  50% {
-    background-size: 100% 2px, 2px 100%, 0 0, 0 0; 
-  }
-
-  75% {
-    background-size: 100% 2px, 2px 100%, 100% 2px, 0 0; 
-  }
-
-  100% {
-    background-size: 100% 2px, 2px 100%, 100% 2px, 2px 100%; 
-  }
-}
-
-#tutorial {
-  position: absolute; 
-  top: 1rem; 
-  right: 1rem; 
-  font-size: 0.8rem; 
-  color: #fff; 
-  text-decoration: none;
-  border-bottom: 1px solid var(--clr);
-  transition: all 0.2s ease-out; 
-}
-
-#tutorial:hover, 
-#tutorial:focus {
-  outline: none; 
-  color: var(--clr); 
-  border-color: #fff;
-}
+    
