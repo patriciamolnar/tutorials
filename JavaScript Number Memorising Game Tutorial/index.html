@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pmCodingTutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Game</h1>
+        <button id="end" class="hide">End game</button>
+
+        <p id="total"></p>
+        <div id="level">
+            <p>Select difficulty:</p>
+            <button id="easy" class="difficulty">Easy</button>
+            <button id="medium" class="difficulty">Medium</button>
+            <button id="hard" class="difficulty">Hard</button>
+        </div>
+
+        <div id="game" class="hide">
+            <div id="numbers"></div>
+            <form>
+                <label for="answer">Type in number</label>
+                <input type="text" id="answer" autocomplete="off">
+                <button type="submit" id="submit">Submit</button>
+            </form>
+
+            <div id="feedback"></div>
+
+            <button id="next" class="hide">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        Project created with 
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+        by <a href="https://www.youtube.com/channel/UCnTVj2blZd_9_xpbo2t7ARw">Patricia Molnar</a> - for tutorials on how to build this game & more visit 
+        <a href="https://www.youtube.com/channel/UCnTVj2blZd_9_xpbo2t7ARw">pmCodingTutorial's YouTube channel</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
