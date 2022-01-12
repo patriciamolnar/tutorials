@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root {
+  --dark: #0E1329; 
+  --green: #56BDA2; 
+  --font: 'Outfit', sans-serif;
+}
+
+
+body {
+  font-size: 5rem; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  color: var(--dark); 
+  font-family: var(--font); 
+}
+
+label {
+  position: relative; 
+  padding-left: 7rem; 
+}
+
+input, 
+span, 
+svg {
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+input {
+  opacity: 0; 
+}
+
+span {
+  border: 2px solid #ccc;  
+  width: 4rem; 
+  height: 4rem; 
+}
+
+input:checked + span {
+  border: 2px solid var(--dark);  
+  transition: border 0.5s linear;
+}
+
+input:checked + span svg {
+  animation-name: tick; 
+  animation-duration: 0.5s; 
+  stroke-dashoffset: 0;
+}
+
+@keyframes tick {
+  0% {
+    stroke-dashoffset: 20;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg {
+  stroke: var(--green); 
+  width: 7rem;
+  height: 7rem;
+  margin-left: -0.5rem; 
+  margin-top: -0.1rem;
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+}
