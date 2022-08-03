@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --dark: #161616; 
+    --one: #C6DE41; 
+    --two: #4ECCA3; 
+    --three: #ED6363; 
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: var(--dark);
+}
+
+#burger {
+    width: 140px; 
+    height: 140px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.burger-line {
+    background-color: #FFF; 
+    width: 100%;
+    height: 10px; 
+    position: relative; 
+}
+
+.burger-line::after {
+    content: ''; 
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    height: 100%; 
+    width: 100%;   
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 0.5s ease-in; 
+}
+
+.burger-line:nth-of-type(1)::after {
+    background-color: var(--one);
+    
+}
+
+.burger-line:nth-of-type(2)::after {
+    background-color:var(--two); 
+    
+}
+
+.burger-line:nth-of-type(3)::after {
+    background-color:var(--three); 
+    
+}
+
+#burger:hover .burger-line::after {
+    transform: scale(1, 1.2);
+}
+
+
+/*
+The below code relates to the style of the link to my website and not the burger nav.
+Feel free to ignore it, or if you like the effect, adapt it to your own project :) 
+*/
+#credit, 
+#credit:hover, 
+#credit::after, 
+#credit:hover::after {
+  transition: border-color 0.2s linear;
+} 
+
+#credit {
+  position: absolute; 
+  top: 1em; 
+  right: 1em; 
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px solid var(--one);
+}
+
+#credit:hover {
+  border-bottom: 1px solid var(--two);
+}
+
+#credit::before, 
+#credit::after {
+  content: ''; 
+  position: absolute; 
+  width: 100%; 
+  left: 0; 
+}
+
+#credit::before {
+  bottom: -6px;
+  height: 5px; 
+  border-bottom: 1px solid var(--two);
+}
+
+#credit::after {
+  bottom: -11px;
+  height: 10px; 
+  border-bottom: 1px solid var(--three); 
+}
+
+#credit:hover::after {
+  border-bottom: 1px solid var(--two);
+}
