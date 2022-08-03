@@ -8,6 +8,14 @@ For bi-monthly coding tutorials focusing on frontend web development visit pmCod
 * TailwindCSS tutorials
 
 ## List of tutorials
+
+### 2022
+* [CSS button hover effect 2 using pseudo elements](https://youtu.be/F9kurBcWf8Q)
+* [CSS button hover effect 1: Transition the CSS outline property](https://youtu.be/2zwUmdURH3M)
+
+### 2021
+* [CSS custom checkbox animation](https://youtu.be/tKO-5Arl0SM)
+* [How to code an interactive background animation with CSS and JavaScript](https://youtu.be/sbkjkERnhGg)
 * [JavaScript game tutorial for beginners: How to code a number memorising game with JavaScript](https://youtu.be/hZ05_Tju4ps)
 * [CSS animation on input focus: add an animated outline with CSS and JavaScript](https://youtu.be/XKn_8AwfF3w)
 * [Tailwind CSS tutorial: How to code a responsive navigation](https://youtu.be/bbyH3MSrCkE)
@@ -23,6 +31,8 @@ For bi-monthly coding tutorials focusing on frontend web development visit pmCod
 * [CSS text animation - animate letters](https://youtu.be/WnoZAPj_yhQ)
 * [Interactive CSS background animation](https://youtu.be/Ws5GFMeRye4)
 * [Glassmorphism Tutorial](https://youtu.be/Tkph7eiceQE)
+
+### 2020
 * [Animated Underline with JavaScript Intersection Observer](https://youtu.be/B7laJa9KUaI)
 * [Dots Navigation Transition effect](https://youtu.be/hzmGprl763k)
 * [Burger Icon Transition effect](https://youtu.be/_7lpzFfmYiY)

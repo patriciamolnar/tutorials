@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pmCoding tutorials: button 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --clr: #E1FF2D; 
+            --dk: #121212;
+        }
+
+        body {
+            font-family: 'Urbanist', sans-serif;
+            height: 100vh; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            background-color: var(--dk); 
+        }
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            font-family: inherit;
+            font-size: 3rem;
+            padding: 0.5em 1em;
+
+            color: var(--clr);
+            border: 4px solid var(--clr);
+            position: relative; 
+
+            overflow: hidden;
+            transition: all 0.5s linear;  
+        }
+
+        button:hover {
+            color: var(--dk);  
+            transition: all 0.3s linear; 
+        }
+
+        button::after {
+            content: ''; 
+            position: absolute; 
+            inset: 0; 
+            background-color: var(--clr);
+            z-index: -1; 
+            transform: translate(-100%, -100%); 
+            transition: transform 0.3s linear; 
+        }
+
+        button:hover::after {
+            transform: translate(0, 0); 
+        }
+        
+    </style>
+</head>
+<body>
+    <button>hover over me</button>
+</body>
+</html>
