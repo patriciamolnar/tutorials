@@ -14,6 +14,7 @@ Below I provide a link to the YouTube and to the written tutorial available on m
 
 ### 2022
 * more coming soon :) 
+* CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Blog](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
 * CSS button hover effect 3: [YouTube](https://youtu.be/erabPOqXBKY)
 * CSS button hover effect 2 using pseudo elements: [YouTube](https://youtu.be/F9kurBcWf8Q)
 * CSS button hover effect 1 - Transition the CSS outline property: [YouTube](https://youtu.be/2zwUmdURH3M)
@@ -40,7 +41,7 @@ Below I provide a link to the YouTube and to the written tutorial available on m
 ### 2020
 * Animated Underline with JavaScript Intersection Observer[YouTube](https://youtu.be/B7laJa9KUaI)
 * Dots Navigation Transition effect: [YouTube](https://youtu.be/hzmGprl763k)
-* Burger Icon Transition effect: [YouTube](https://youtu.be/_7lpzFfmYiY)
+* Burger Icon Transition effect: [YouTube](https://youtu.be/_7lpzFfmYiY) | [Blog](https://pmcoding.co.uk/posts/t1_burger_icon_css_transition)
 * Responsive Navigation Playlist: [YouTube](https://www.youtube.com/playlist?list=PLVpIfGYOn8DbEDIPcSgmxMk4AfoXMLwQF)
 * HTML tutorial Playlist: [YouTube](https://www.youtube.com/playlist?list=PLVpIfGYOn8DbEDIPcSgmxMk4AfoXMLwQF)
 
