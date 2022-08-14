@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --clr: #ffff00; 
+    --shadow: 2px 4px 3px rgb(0 0 0 / 30%);
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    width: 100%; 
+    height: 100vh; 
+    position: relative; 
+}
+
+/* text */
+.center {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+}
+
+#heading_1, 
+#heading_2 {
+    font-size: calc(1rem + 4vw);
+    font-weight: 700;  
+    text-shadow: var(--shadow);
+}
+
+#heading_1 {
+    color: var(--clr); 
+    top: 30%; 
+}
+
+#heading_2 { 
+    margin-bottom: 0.2em;
+}
+
+#image_2 p:nth-child(2) {
+    font-size: 1.5rem; 
+    margin-bottom: 1.5em; 
+}
+
+button {
+    background-color: var(--clr);
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+    font-weight: 700; 
+    box-shadow: var(--shadow);
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #AEF359; 
+}
+
+
+/* background */
+#image_1, 
+#image_2 {
+    position: absolute; 
+    inset: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+#image_1 {
+    background-image: url('img/pexels-dom-j-303315.jpg'); 
+    filter: grayscale(100%) brightness(50%); 
+}
+
+#image_2 {
+    background-image: url('img/pexels-jonathan-cooper-13064584.jpg'); 
+    
+    -webkit-mask-image: url('img/circle.svg');
+    mask-image: url('img/circle.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 0%; 
+    mask-size: 0%; 
+
+    animation-name: animate; 
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+header:hover #image_2 {
+    animation-play-state: running;
+}
+
+
+@keyframes animate {
+    0% {
+        -webkit-mask-size: 0%; 
+        mask-size: 0%; 
+    }
+
+    100% {
+        -webkit-mask-size: 150%; 
+        mask-size: 150%; 
+    }
+}
+
+/* 
+link to images: 
+https://www.pexels.com/photo/green-grass-field-near-body-of-water-under-blue-sky-13064584/ 
+https://www.pexels.com/photo/people-waiting-for-bus-303315/
+*/ 

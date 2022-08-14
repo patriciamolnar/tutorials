@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&display=swap');
+
+:root {
+    --svg: url('img/hexagon.svg');
+    --one: #0B3954; 
+    --two: #087E8B;
+    --four: #FF5A5F; 
+
+    --lato: 'Lato', sans-serif;
+    --lobster: 'Lobster', cursive;
+}
+
+main {
+    max-width: 1024px; 
+    font-family: var(--lato); 
+    margin: 2em auto 4em; 
+}
+
+h1, h2, .employees {
+    font-family: var(--lobster); 
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1 svg {
+    width: 1rem; 
+    height: 1rem;
+    fill: var(--four); 
+    margin-left: -0.5rem;
+    margin-bottom: -0.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+h2 svg {
+    width: 0.6em; 
+    height: 0.6rem;
+    fill: var(--four); 
+    margin-left: -0.4rem;
+    margin-bottom: -0.1rem;
+}
+
+.employees {
+    display: grid; 
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    font-size: 1.5rem; 
+}
+
+.hexagon {
+    width: 350px; 
+    height: 350px; 
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+
+    /* for name appearing in hexagon */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+
+    position: relative; 
+}
+
+
+.hex_1, 
+.hex_6 {
+    background-color: var(--one);
+}
+
+.hex_2,
+.hex_4 { 
+    background-color: var(--two); 
+}
+
+.hex_3, 
+.hex_5 { 
+    background-color: var(--four); 
+}
+
+.container {
+    position: relative; 
+}
+
+.name {
+    position: absolute; 
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%); 
+    color: #000; 
+    opacity: 0;
+    text-align: center;
+    width: fit-content;
+
+    /* for name appearing below hexagon */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    animation-name: appear; 
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.title {
+    font-family: var(--lato);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.image {
+    position: absolute; 
+    inset: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 0%; 
+    mask-size: 0%; 
+
+    animation-name: animate; 
+    animation-duration: 1s; 
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+#image_1 {
+    background-image: url('img/pexels-dominika-roseclay-1139795.jpg')
+}
+
+#image_2 {
+    background-image: url('img/pexels-helena-lopes-2253275.jpg'); 
+}
+
+#image_3 {
+    background-image: url('img/pexels-helena-lopes-3714060.jpg'); 
+}
+
+#image_4 {
+    background-image: url('img/pexels-muhannad-alatawi-58997.jpg'); 
+}
+
+#image_5 {
+    background-image: url('img/pexels-pixabay-164186.jpg');  
+}
+
+#image_6 {
+    background-image: url('img/pexels-svetozar-milashevich-1490908.jpg'); 
+}
+
+.container:hover .image,
+.container:hover .name {
+    animation-play-state: running;
+}
+
+@keyframes animate {
+    0% {
+        -webkit-mask-size: 0%; 
+        mask-size: 0%; 
+    }
+
+    100% {
+        -webkit-mask-size: 90%; 
+        mask-size: 90%; 
+    }
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* link to my website */
+aside {
+    position: absolute;
+    top: 1.5em; 
+    right: 1.5em;
+}
+
+aside a {
+    color: var(--two); 
+    font-family: var(--lobster); 
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+aside a:hover {
+    color: var(--four);
+    transition: color 0.2s linear;
+}
