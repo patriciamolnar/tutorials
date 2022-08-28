@@ -14,7 +14,7 @@ Below I provide a link to the YouTube and to the written tutorial available on m
 
 ### 2022
 * more coming soon :) 
-* trickJS JavaScript Exercises & Solutions (updated weekly) [YouTube Playlist](https://youtube.com/playlist?list=PLVpIfGYOn8DYIFmlAfoKm3-1Z6cpw10PT) | [Take the Quiz](https://www.pmcoding.co.uk/trickyjs)
+* trickyJS JavaScript Exercises & Solutions (updated weekly) [YouTube Playlist](https://youtube.com/playlist?list=PLVpIfGYOn8DYIFmlAfoKm3-1Z6cpw10PT) | [Take the Quiz](https://www.pmcoding.co.uk/trickyjs)
 * CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Blog](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
 * CSS button hover effect 3: [YouTube](https://youtu.be/erabPOqXBKY)
 * CSS button hover effect 2 using pseudo elements: [YouTube](https://youtu.be/F9kurBcWf8Q)
