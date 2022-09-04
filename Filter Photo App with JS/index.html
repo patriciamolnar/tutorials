@@ -6,9 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>filter photo app | pmCoding tutorias</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <main>
+        <h1>
+            Apply filters to your images
+        </h1>
+
+        <form>
+            <label for="image" class="sr-only">Upload an image</label>
+            <input type="file" accept="image/png, image/jpg, image/jpeg" name="image" id="image">
+        </form>
+
+        <div class="container">
+            <canvas></canvas>
+
+            <div class="buttons">
+                <div class="filters">
+                    <button id="grayscale">Grayscale</button>
+                    <button id="monotone">Blue Monoton</button>
+                    <button id="duotone">Orange Blue</button>
+                </div>
+
+                <div class="actions">
+                    <button id="reset">Reset</button>
+                    <a id="download" download>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20px" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                        </svg>
     
+                        <span>Download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Made with
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#5c5cff;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#FF715B;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffc65b;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path fill="url(#grad1)" d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+            </svg>         
+            by <a href="https://pmcoding.co.uk/" target="blank">pmCoding tutorials</a>.
+        </footer>
+    </main>
 </body>
 </html>
