@@ -13,7 +13,7 @@ For regular coding tutorials focusing on frontend web development visit pmCoding
 Below I provide a link to the YouTube and to the written tutorial available on my blog.  
 
 ### 2022
-* more coming soon :) 
+* JavaScript Portfolio Project: Photo Filter App Tutorial [YouTube](https://youtu.be/RmWn-abDaZ4)
 * trickyJS JavaScript Exercises & Solutions (updated weekly) [YouTube Playlist](https://youtube.com/playlist?list=PLVpIfGYOn8DYIFmlAfoKm3-1Z6cpw10PT) | [Take the Quiz](https://www.pmcoding.co.uk/trickyjs)
 * CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Blog](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
 * CSS button hover effect 3: [YouTube](https://youtu.be/erabPOqXBKY)
