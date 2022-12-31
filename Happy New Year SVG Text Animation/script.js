@@ -1,9 +1,6 @@
 let hue = 60; 
 let delay = 0; 
 
-const min = 100;
-const max = 400; 
-
 const elements = document.querySelectorAll('svg path'); 
 elements.forEach((element) => {
     const length = element.getTotalLength();
