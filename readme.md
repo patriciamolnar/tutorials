@@ -13,7 +13,16 @@ For regular coding tutorials focusing on frontend web development visit pmCoding
 Below I provide a link to the YouTube and to the written tutorial available on my blog.  
 
 ### 2022
-* JavaScript Portfolio Project: Photo Filter App Tutorial [YouTube](https://youtu.be/RmWn-abDaZ4)
+
+* Text Outline Animation Using SVGs & JavaScript 
+    [Source Code](https://github.com/patriciamolnar/tutorials/tree/master/Happy%20New%20Year%20SVG%20Text%20Animation) | 
+    [Written Tutorial](https://pmcoding.co.uk/post/text_outline_animation_using_svg) | 
+    [CodePen](https://codepen.io/patriciamolnar/full/JjBXQwr)
+* JavaScript Portfolio Project: Photo Filter App Tutorial 
+    [Source Code](https://github.com/patriciamolnar/tutorials/tree/master/Filter%20Photo%20App%20with%20JS) | 
+    [YouTube Tutorial](https://youtu.be/RmWn-abDaZ4) | 
+    [Written Tutorial](https://pmcoding.co.uk/post/how_to_code_a_javascript_photo_filter_app) | 
+    [CodePen](https://codepen.io/patriciamolnar/full/ExLgoZL)
 * trickyJS JavaScript Exercises & Solutions (updated weekly) [YouTube Playlist](https://youtube.com/playlist?list=PLVpIfGYOn8DYIFmlAfoKm3-1Z6cpw10PT) | [Take the Quiz](https://www.pmcoding.co.uk/trickyjs)
 * CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Blog](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
 * CSS button hover effect 3: [YouTube](https://youtu.be/erabPOqXBKY)
