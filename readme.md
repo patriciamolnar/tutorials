@@ -16,22 +16,22 @@ Below I provide a link to the YouTube and to the written tutorial available on m
 
 * Text Outline Animation Using SVGs & JavaScript 
     [Source Code](https://github.com/patriciamolnar/tutorials/tree/master/Happy%20New%20Year%20SVG%20Text%20Animation) | 
-    [Written Tutorial](https://pmcoding.co.uk/post/text_outline_animation_using_svg) | 
+    [Tutorial](https://pmcoding.co.uk/post/text_outline_animation_using_svg) | 
     [CodePen](https://codepen.io/patriciamolnar/full/JjBXQwr)
 * JavaScript Portfolio Project: Photo Filter App Tutorial 
     [Source Code](https://github.com/patriciamolnar/tutorials/tree/master/Filter%20Photo%20App%20with%20JS) | 
-    [YouTube Tutorial](https://youtu.be/RmWn-abDaZ4) | 
+    [YouTube](https://youtu.be/RmWn-abDaZ4) | 
     [Written Tutorial](https://pmcoding.co.uk/post/how_to_code_a_javascript_photo_filter_app) | 
     [CodePen](https://codepen.io/patriciamolnar/full/ExLgoZL)
 * trickyJS JavaScript Exercises & Solutions (updated weekly) [YouTube Playlist](https://youtube.com/playlist?list=PLVpIfGYOn8DYIFmlAfoKm3-1Z6cpw10PT) | [Take the Quiz](https://www.pmcoding.co.uk/trickyjs)
-* CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Blog](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
+* CSS background cutout animation: [YouTube](https://youtu.be/Zkhpj07Nyjg) | [Written Tutorial](https://pmcoding.co.uk/posts/css_background_cutout_animation_mask_image)
 * CSS button hover effect 3: [YouTube](https://youtu.be/erabPOqXBKY)
 * CSS button hover effect 2 using pseudo elements: [YouTube](https://youtu.be/F9kurBcWf8Q)
 * CSS button hover effect 1 - Transition the CSS outline property: [YouTube](https://youtu.be/2zwUmdURH3M)
 
 ### 2021
-* CSS custom checkbox animation: [YouTube](https://youtu.be/tKO-5Arl0SM) | [Blog](https://pmcoding.co.uk/posts/input_field_focus_animation)
-* How to code an interactive background animation with CSS and JavaScript: [YouTube](https://youtu.be/sbkjkERnhGg) | [Blog](https://pmcoding.co.uk/posts/interactive_background_animation)
+* CSS custom checkbox animation: [YouTube](https://youtu.be/tKO-5Arl0SM) | [Written Tutorial](https://pmcoding.co.uk/posts/input_field_focus_animation)
+* How to code an interactive background animation with CSS and JavaScript: [YouTube](https://youtu.be/sbkjkERnhGg) | [Written Tutorial](https://pmcoding.co.uk/posts/interactive_background_animation)
 * JavaScript game tutorial for beginners: Code a number memorising game: [YouTube](https://youtu.be/hZ05_Tju4ps)
 * CSS Input Field animation on focus: add an animated outline with CSS and JavaScript: [YouTube](https://youtu.be/XKn_8AwfF3w)
 * Tailwind CSS tutorial: How to code a responsive navigation: [YouTube](https://youtu.be/bbyH3MSrCkE)
@@ -49,9 +49,9 @@ Below I provide a link to the YouTube and to the written tutorial available on m
 * Glassmorphism Tutorial: [YouTube](https://youtu.be/Tkph7eiceQE)
 
 ### 2020
-* Animated Underline with JavaScript Intersection Observer[YouTube](https://youtu.be/B7laJa9KUaI)
+* Animated Underline with JavaScript Intersection Observer [YouTube](https://youtu.be/B7laJa9KUaI)
 * Dots Navigation Transition effect: [YouTube](https://youtu.be/hzmGprl763k)
-* Burger Icon Transition effect: [YouTube](https://youtu.be/_7lpzFfmYiY) | [Blog](https://pmcoding.co.uk/posts/t1_burger_icon_css_transition)
+* Burger Icon Transition effect: [YouTube](https://youtu.be/_7lpzFfmYiY) | [Written Tutorial](https://pmcoding.co.uk/posts/t1_burger_icon_css_transition)
 * Responsive Navigation Playlist: [YouTube](https://www.youtube.com/playlist?list=PLVpIfGYOn8DbEDIPcSgmxMk4AfoXMLwQF)
 * HTML tutorial Playlist: [YouTube](https://www.youtube.com/playlist?list=PLVpIfGYOn8DbEDIPcSgmxMk4AfoXMLwQF)
 
